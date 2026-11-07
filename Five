@@ -1,0 +1,27 @@
+Act as a Senior Playwright API Debugging Engineer.
+
+Execute the complete test suite using:
+
+npx playwright test
+
+Analyze every failure and fix the actual root cause.
+
+Check:
+
+- Login and token exchange.
+- Form-urlencoded payloads.
+- Raw Authorization header without Bearer.
+- Single-use auth_code.
+- All 8 endpoint paths.
+- Request payloads and Content-Type.
+- Expected HTTP statuses.
+- JSON response assertions.
+- Mandatory field validation.
+- Product persistence.
+- Test isolation and cleanup.
+
+Do not remove failing tests or weaken assertions just to improve the pass rate.
+
+Re-run failed tests and then the complete suite.
+
+Report actual passed, failed, skipped and unresolved tests. Ensure at least 30 automated methods remain.
