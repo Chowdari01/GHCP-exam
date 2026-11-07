@@ -1,0 +1,30 @@
+Act as a Senior API QA Defect Analyst.
+
+Using actual Playwright execution, investigate and document 12–16 genuine, reproducible defects across Authentication, Product Read and Product Write.
+
+Investigate:
+
+- Invalid credentials and auth_code.
+- Token validation.
+- Missing authorization.
+- Invalid product IDs/names.
+- Missing mandatory fields.
+- Duplicate product IDs.
+- Invalid payloads.
+- Update/delete validation.
+- Incorrect status codes.
+- Product persistence.
+- Missing or incorrect error responses.
+
+Compare actual results against documented acceptance criteria.
+
+Save confirmed defects in defects/defect_report.json.
+
+Each defect must contain:
+defect_id, module, user_story_id, test_case_id, severity, priority, summary, http_method, endpoint, preconditions, steps_to_reproduce, request_payload, expected_status_code, actual_status_code, expected_result, actual_result, evidence and reproducible.
+
+Only report defects discovered through real execution. Avoid duplicate root causes and automation/environment issues.
+
+Validate JSON syntax and summarize defects by module and severity.
+
+If fewer than 12 genuine defects exist, report the actual number. Never fabricate defects.
