@@ -1,0 +1,38 @@
+Act as a strict Cognizant API Automation Assessment Evaluator.
+
+Audit my complete OAuth Product API testing assignment against every requirement.
+
+Verify these deliverables:
+
+1. API Analysis & Requirements.txt
+2. API_Test_Cases.csv (55+ test cases)
+3. Playwright + TypeScript automation codebase
+4. defects/defect_report.json (12–16 verified defects, if supported)
+
+Check:
+
+- All 10 user stories.
+- All 8 endpoints.
+- Correct OAuth authentication flow.
+- Raw token without Bearer.
+- Acceptance criteria.
+- CSV columns and scenario distribution.
+- At least 30 automated test methods.
+- Assertions in every test.
+- Positive, negative and boundary scenarios.
+- Persistence testing.
+- Actual execution results.
+- Defect evidence.
+- TypeScript compilation.
+- Workspace structure.
+
+Run the complete suite.
+
+Create a requirement-wise audit:
+Requirement | PASS/FAIL/NEEDS VERIFICATION | Evidence | Fix.
+
+Fix all genuine issues directly. Preserve existing files and workspace structure.
+
+Finally verify that all four deliverables are saved, provide execution commands and report unresolved issues.
+
+Never fabricate test results or defect evidence.
