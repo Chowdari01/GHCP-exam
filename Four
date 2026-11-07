@@ -1,0 +1,49 @@
+Act as a Senior Playwright API Automation Architect. Build a complete API automation framework using Playwright + TypeScript + APIRequestContext in my existing workspace.
+
+Do not use browser UI automation or Selenium.
+
+Implement:
+
+- BaseTest.ts
+- AuthService.ts
+- ProductReadService.ts
+- ProductWriteService.ts
+- RequestModels.ts
+- ResponseModels.ts
+- AuthTests.spec.ts
+- ProductReadTests.spec.ts
+- ProductWriteTests.spec.ts
+
+Adapt filenames and folders to the existing workspace.
+
+Implement reusable authentication:
+
+POST /auth/login → extract auth_code.
+POST /auth/token → extract access_token.
+Pass raw access_token in Authorization header WITHOUT Bearer.
+
+Automate all 8 endpoints.
+
+Create at least 30 meaningful test methods:
+
+- Authentication: 10+.
+- Product Read: 8+.
+- Product Write: 12+.
+
+Include positive, negative, boundary, missing-field, invalid-token, duplicate-ID and persistence tests.
+
+Requirements:
+
+- Use TypeScript interfaces.
+- Use reusable helpers.
+- Use Playwright expect assertions.
+- Validate status codes and response bodies.
+- Handle single-use auth_code correctly.
+- Use isolated test data.
+- Avoid destructive operations on existing products.
+- Do not hard-code tokens.
+- Reuse existing dependencies and preserve workspace structure.
+
+Execute the tests, fix TypeScript errors and verify every test contains meaningful assertions.
+
+Do not claim tests passed without execution evidence.
