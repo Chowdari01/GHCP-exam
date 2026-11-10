@@ -1,36 +1,18 @@
-Act as a Senior API Test Designer. Generate 60 detailed, unique test cases covering all 10 user stories and all three modules.
+Based on the finalized acceptance criteria, generate at least 60 detailed test cases covering all 21 user stories across Login, Add Student, and Add Professor modules.
 
-Save as API_Test_Cases.csv.
+Save the test cases in exactly one file named testcases.csv.
 
-Distribution:
+Use these columns:
+TC_ID, Module, User_Story_ID, Test_Scenario, Test_Type, Priority, Precondition, Test_Steps, TestData_Expected, Result_Actual, ResultStatus.
 
-- Authentication: 18.
-- Product Read: 18.
-- Product Write: 24.
+Requirements:
 
-Required columns in exact order:
+- 60–70% must be Negative/Validation test cases.
+- Negative test cases must have Critical or High priority.
+- Boundary test cases must have Medium priority.
+- Positive test cases must have Low priority.
+- Include valid, invalid, empty, and boundary input values.
+- Cover all mandatory fields and validation rules.
+- Ensure CSV formatting is correct.
 
-TC_ID, Module, User_Story_ID, Test_Scenario, Test_Type, Priority, HTTP_Method, Endpoint, Request_Payload, Expected_Status_Code, Expected_Response, Actual_Response, Status
-
-Coverage:
-
-- Valid/invalid login and token exchange.
-- Missing/reused auth_code.
-- Missing/invalid/raw/Bearer token.
-- All product read operations.
-- Valid/invalid IDs and names.
-- Add/update/delete products.
-- Missing mandatory fields.
-- Duplicate IDs.
-- Invalid JSON and data types.
-- Boundary and persistence testing.
-
-Distribution:
-
-- 60% Negative/Validation: Critical or High.
-- 20% Boundary: Medium.
-- 20% Positive: Low.
-
-Use actual endpoint details and documented expectations. Keep Actual_Response and Status as Not Executed.
-
-Validate CSV syntax, exact row count, priorities, percentages and coverage of all 10 user stories. Save the final file in the existing workspace.
+Do not create automation code yet. Do not modify the existing workspace structure.
