@@ -1,29 +1,22 @@
-Act as a Senior API Testing Engineer. Inspect my existing workspace and analyze the OAuth Product Management API.
+Read all the provided project files, especially User Stories.txt and the assessment instructions, completely.
 
-Base URL: https://webapps.tekstac.com/OAuthRestApi/webapi
+Analyze all three modules:
 
-Credentials: user1 / pass123
+1. Login (US-01 to US-05)
+2. Add Student (US-06 to US-13)
+3. Add Professor (US-14 to US-21)
 
-Explore all 8 operations:
+Inspect the application pages, login flow, arithmetic CAPTCHA, success alert, navigation menus, form fields, element IDs, and validation messages.
 
-1. POST /auth/login
-2. POST /auth/token
-3. GET /getAllProducts
-4. GET /getProductbyId/{id}
-5. GET /viewProductByName?name={name}
-6. POST /addProduct
-7. PUT /updateProduct/{id}
-8. DELETE /delProduct/{id}
+Identify all field validation rules and mandatory fields.
 
-Execute requests using curl in VS Code terminal. Inspect actual request/response bodies, status codes, headers, field types and validation behavior.
+Create or update Application Analysis & Requirements.txt with:
 
-Authentication flow:
-Login → extract auth_code → exchange for access_token → pass raw access_token in Authorization header.
+- Application overview
+- Module-wise requirements
+- Field IDs and element details
+- Acceptance criteria
+- Validation rules
+- Login and CAPTCHA workflow
 
-IMPORTANT: No Bearer prefix. auth_code is single-use.
-
-Test valid/invalid credentials, invalid/reused auth_code, missing/invalid tokens, valid/invalid product IDs and names, missing fields, duplicate IDs and write persistence.
-
-Read all 10 user stories from the existing workspace. Do not modify backend or invent results.
-
-Provide actual API findings and save them in API Analysis & Requirements.txt. Do not generate code yet.
+Strictly follow the assessment requirements. Do not create test cases or automation code yet. Do not modify the existing workspace structure.
