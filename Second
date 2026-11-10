@@ -1,25 +1,19 @@
-Act as a Senior QA Analyst. Using the original 10 user stories and actual API findings, complete API Analysis & Requirements.txt.
+Using the Application Analysis & Requirements.txt and User Stories.txt, create detailed acceptance criteria for all 21 user stories (US-01 to US-21).
 
-Cover all three modules:
+Cover Login, Add Student, and Add Professor modules.
 
-1. OAuth Authentication.
-2. Product Read.
-3. Product Write.
+Include:
 
-Document all 8 endpoints, authentication flow, request/response examples, HTTP statuses, field validation, error handling and persistence.
+- Positive scenarios
+- Negative and validation scenarios
+- Boundary conditions
+- Mandatory field validations
+- Expected error messages
+- CAPTCHA validation
+- Form submission behavior
 
-Write clear Given/When/Then acceptance criteria for all 10 user stories.
+Ensure every user story is covered without missing any requirement.
 
-Apply documented rules:
+Update Application Analysis & Requirements.txt with the acceptance criteria.
 
-- Username: user1; password: pass123.
-- Invalid credentials: 401.
-- Invalid/reused auth_code: 400.
-- Missing/invalid token: 401.
-- Invalid/nonexistent product ID or name: 404.
-- Product ID, name and amount are mandatory for writes.
-- Authorization must contain the raw access_token without Bearer.
-
-Distinguish actual observations from expected behavior. Do not invent undocumented rules.
-
-Save and verify API Analysis & Requirements.txt.
+Do not generate test cases or automation code yet.
