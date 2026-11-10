@@ -1,30 +1,32 @@
-Act as a Senior API QA Defect Analyst.
+Analyze the actual automation execution results for Login, Add Student, and Add Professor modules.
 
-Using actual Playwright execution, investigate and document 12–16 genuine, reproducible defects across Authentication, Product Read and Product Write.
+Identify genuine application defects discovered during test execution.
 
-Investigate:
+For each confirmed defect, record:
 
-- Invalid credentials and auth_code.
-- Token validation.
-- Missing authorization.
-- Invalid product IDs/names.
-- Missing mandatory fields.
-- Duplicate product IDs.
-- Invalid payloads.
-- Update/delete validation.
-- Incorrect status codes.
-- Product persistence.
-- Missing or incorrect error responses.
+1. Defect ID
+2. Module
+3. User Story ID
+4. Input values
+5. Steps to reproduce
+6. Expected result
+7. Actual result
+8. Severity
+9. Priority
 
-Compare actual results against documented acceptance criteria.
+Create or update exactly one consolidated JSON file:
 
-Save confirmed defects in defects/defect_report.json.
+defects/defect_report.json
 
-Each defect must contain:
-defect_id, module, user_story_id, test_case_id, severity, priority, summary, http_method, endpoint, preconditions, steps_to_reproduce, request_payload, expected_status_code, actual_status_code, expected_result, actual_result, evidence and reproducible.
+Requirements:
 
-Only report defects discovered through real execution. Avoid duplicate root causes and automation/environment issues.
+- Aim to identify at least 8 distinct defects through actual execution.
+- Do not invent defects.
+- Do not report automation script errors as application defects.
+- Do not duplicate the same defect.
+- Include only defects supported by actual test execution.
+- If fewer than 8 genuine defects are found, report the actual number honestly.
 
-Validate JSON syntax and summarize defects by module and severity.
+Ensure the JSON file is valid and follows the required structure.
 
-If fewer than 12 genuine defects exist, report the actual number. Never fabricate defects.
+Do not change the existing workspace structure.
