@@ -1,38 +1,44 @@
-Act as a strict Cognizant API Automation Assessment Evaluator.
+Perform a complete final verification of the SmartUniversity automation assessment.
 
-Audit my complete OAuth Product API testing assignment against every requirement.
+Verify all deliverables:
 
-Verify these deliverables:
+1. Application Analysis & Requirements.txt
+   
+   - All 21 user stories
+   - Application analysis
+   - Element IDs
+   - Acceptance criteria
+   - Validation rules
 
-1. API Analysis & Requirements.txt
-2. API_Test_Cases.csv (55+ test cases)
-3. Playwright + TypeScript automation codebase
-4. defects/defect_report.json (12–16 verified defects, if supported)
+2. testcases.csv
+   
+   - At least 60 test cases
+   - All 21 user stories covered
+   - Correct test case columns
+   - 60–70% negative/validation scenarios
+   - Correct priority distribution
 
-Check:
+3. Automation codebase
+   
+   - Login Page Object
+   - Add Student Page Object
+   - Add Professor Page Object
+   - Reusable CAPTCHA and alert handling helper
+   - At least 20 automated test methods
+   - Active assertions in every test method
 
-- All 10 user stories.
-- All 8 endpoints.
-- Correct OAuth authentication flow.
-- Raw token without Bearer.
-- Acceptance criteria.
-- CSV columns and scenario distribution.
-- At least 30 automated test methods.
-- Assertions in every test.
-- Positive, negative and boundary scenarios.
-- Persistence testing.
-- Actual execution results.
-- Defect evidence.
-- TypeScript compilation.
-- Workspace structure.
+4. defects/defect_report.json
+   
+   - Valid JSON structure
+   - Actual execution-based defects only
+   - Inputs, expected results, actual results, severity, and priority
 
-Run the complete suite.
+Run the complete automation suite again and fix any remaining genuine issues.
 
-Create a requirement-wise audit:
-Requirement | PASS/FAIL/NEEDS VERIFICATION | Evidence | Fix.
+Check that all files are saved and no unnecessary files or folders have been created.
 
-Fix all genuine issues directly. Preserve existing files and workspace structure.
+Do not fabricate successful results or defects.
 
-Finally verify that all four deliverables are saved, provide execution commands and report unresolved issues.
+Provide a final summary of completed requirements, test execution results, remaining failures, and deliverables.
 
-Never fabricate test results or defect evidence.
+Do not change the existing workspace structure.
