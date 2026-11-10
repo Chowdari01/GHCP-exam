@@ -1,49 +1,34 @@
-Act as a Senior Playwright API Automation Architect. Build a complete API automation framework using Playwright + TypeScript + APIRequestContext in my existing workspace.
+Now develop the automation framework using the existing project structure.
 
-Do not use browser UI automation or Selenium.
+Use the framework and programming language already configured in the workspace. Do not replace the existing setup.
 
-Implement:
+Create or update Page Objects for:
 
-- BaseTest.ts
-- AuthService.ts
-- ProductReadService.ts
-- ProductWriteService.ts
-- RequestModels.ts
-- ResponseModels.ts
-- AuthTests.spec.ts
-- ProductReadTests.spec.ts
-- ProductWriteTests.spec.ts
+1. Login Page
+2. Add Student Page
+3. Add Professor Page
 
-Adapt filenames and folders to the existing workspace.
+Implement a reusable login helper that:
 
-Implement reusable authentication:
+- Opens the login page.
+- Enters username admin.
+- Enters password admin#123.
+- Reads the arithmetic CAPTCHA displayed on the page.
+- Calculates and enters the correct CAPTCHA answer.
+- Clicks Submit.
+- Handles and dismisses the "Login Successful" browser alert.
+- Waits for the application dashboard to load.
 
-POST /auth/login → extract auth_code.
-POST /auth/token → extract access_token.
-Pass raw access_token in Authorization header WITHOUT Bearer.
+Create at least 20 automated test methods with active assertions covering all three modules.
 
-Automate all 8 endpoints.
+Important:
 
-Create at least 30 meaningful test methods:
+- Every test method must execute the login helper before testing its respective functionality.
+- Include 60–70% negative/validation scenarios.
+- Include boundary and positive scenarios.
+- Use actual element IDs identified during application inspection.
+- Verify actual application behavior using assertions.
+- Do not use hardcoded CAPTCHA answers.
+- Follow Page Object Model and standard coding practices.
 
-- Authentication: 10+.
-- Product Read: 8+.
-- Product Write: 12+.
-
-Include positive, negative, boundary, missing-field, invalid-token, duplicate-ID and persistence tests.
-
-Requirements:
-
-- Use TypeScript interfaces.
-- Use reusable helpers.
-- Use Playwright expect assertions.
-- Validate status codes and response bodies.
-- Handle single-use auth_code correctly.
-- Use isolated test data.
-- Avoid destructive operations on existing products.
-- Do not hard-code tokens.
-- Reuse existing dependencies and preserve workspace structure.
-
-Execute the tests, fix TypeScript errors and verify every test contains meaningful assertions.
-
-Do not claim tests passed without execution evidence.
+Save all files in the existing workspace. Do not create unnecessary folders or files.
