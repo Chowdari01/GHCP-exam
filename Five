@@ -1,27 +1,21 @@
-Act as a Senior Playwright API Debugging Engineer.
+Review the current automation framework and the first evaluation feedback.
 
-Execute the complete test suite using:
+Run the automation test suite using the integrated VS Code terminal.
 
-npx playwright test
+Analyze the actual execution results:
 
-Analyze every failure and fix the actual root cause.
+- Identify compilation errors.
+- Identify locator failures.
+- Verify CAPTCHA handling.
+- Verify browser alert handling.
+- Check navigation between modules.
+- Verify form validation assertions.
+- Identify failed and passed test cases.
 
-Check:
+Fix the genuine issues based on execution results and evaluation feedback.
 
-- Login and token exchange.
-- Form-urlencoded payloads.
-- Raw Authorization header without Bearer.
-- Single-use auth_code.
-- All 8 endpoint paths.
-- Request payloads and Content-Type.
-- Expected HTTP statuses.
-- JSON response assertions.
-- Mandatory field validation.
-- Product persistence.
-- Test isolation and cleanup.
+Ensure all automated tests have active assertions and every test method executes the login helper.
 
-Do not remove failing tests or weaken assertions just to improve the pass rate.
+Do not create fake test results or theoretical defects.
 
-Re-run failed tests and then the complete suite.
-
-Report actual passed, failed, skipped and unresolved tests. Ensure at least 30 automated methods remain.
+Save all updated files and maintain the existing project structure.
